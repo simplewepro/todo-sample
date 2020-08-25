@@ -1,0 +1,38 @@
+.m-todo-item {
+  position: relative;
+
+  .ui.icon.button {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s;
+  }
+
+  &:hover {
+    .ui.icon.button {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 1px);
+    width: 0;
+    right: 0;
+    height: 1px;
+
+    background: #000;
+    transition: width 0.4s;
+  }
+
+  &.completed {
+    opacity: 0.6;
+
+    &::after {
+      width: 100%;
+      right: 0;
+      left: 0;
+    }
+  }
+}

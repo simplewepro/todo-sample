@@ -1,0 +1,14 @@
+.m-list-item {
+  .ui.icon.button {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s;
+  }
+
+  &:hover {
+    .ui.icon.button {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

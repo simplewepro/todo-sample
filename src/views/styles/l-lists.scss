@@ -1,0 +1,26 @@
+.m-sidebar {
+  background: white;
+
+  .ui.vertical.segment {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.l-lists {
+  .m-sidebar {
+    z-index: 10 !important;
+
+    .ui.vertical.segment.head {
+      background: #ccc;
+    }
+  }
+}
+
+.l-todos {
+  .m-sidebar {
+    .ui.vertical.segment.head {
+      background: lightblue;
+    }
+  }
+}
